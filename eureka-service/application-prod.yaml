@@ -1,2 +1,9 @@
+spring:
+  profiles: prod
+
 server:
-  port: 8761
+  port: 8761  # Standard port for the Eureka Server in production
+
+eureka:
+  server:
+    enable-self-preservation: true  # Enable for production

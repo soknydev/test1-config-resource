@@ -1,2 +1,9 @@
+spring:
+  profiles: dev
+
 server:
-  port: 8761
+  port: 8762  # Port specific to the dev environment
+
+eureka:
+  server:
+    enable-self-preservation: true  # Enable self-preservation for dev
